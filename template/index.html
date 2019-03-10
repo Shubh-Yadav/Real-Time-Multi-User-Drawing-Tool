@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Real time Multi-user Drawing App</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+<!--     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">;)</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- Intro Header -->
+<!--     <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Heya!</h1> -->
+<!--               <p class="intro-text">I'm Akshit and this is my playground.</p> -->
+<!--               <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+ -->
+    <!-- About Section -->
+<!--     <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About me</h2>
+            <p>I am a backend developer and recently got my hands dipped into node.js and all the interesting stuff around it. Had worked on php and sql before.</p>
+            <p>Also tried a bit of python as required in a thesis i had done with my colleagues on sentimental analysis and text mining of reviews given by Foreign Tourists in India.</p>
+            <p>I'm trying to increase the scope of my knowledge, learn new things and get proficient at them. And this is where i play with the things i try to learn, feel free to explore.</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Download Section -->
+<!--     <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto"> -->
+<!--           <h2>Download Grayscale</h2>
+          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a> -->
+<!--         </div>
+      </div>
+    </section>
+ -->
+    <!-- Contact Section -->
+<!--     <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Me</h2>
+            <p>You can contact me for work at  <a href="mailto:akshitagarwal10@gmail.com">akshitagarwal10@gmail.com</a> or just to say hi!
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/akshit-agarwal-10/" class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin fa-fw"></i>
+                  <span class="network-name">LinkedIn</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/akshitagarwal10" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://plus.google.com/u/0/105487690558128633883" class="btn btn-default btn-lg">
+                  <i class="fa fa-google-plus fa-fw"></i>
+                  <span class="network-name">Google+</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- drawing canvas -->
+    <section id="canvas" class="text-center">
+    	<br><br><br>
+      <div class="container">
+        <span id="canvasCaption">...</span>
+        <div class="col-lg-8 col-xs-12 mx-auto">
+          <canvas width="710" height="400"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <img id="thiefMan" src="img/thief-man.png">
+        <p id="thiefManCaption">What are you looking at ?<img id="littleSheep" src="img/little-sheep.png"></p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- CDN socket.io.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.js"></script>
+
+  </body>
+
+</html>
