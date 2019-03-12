@@ -1,0 +1,17 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "playing with node and more",
+  "main": "app.js",
+  "dependencies": {
+  	"express": "*",
+  	"body-parser": "*",
+  	"mongoose": "*",
+    "socket.io": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Akshit",
+  "license": "ISC"
+}

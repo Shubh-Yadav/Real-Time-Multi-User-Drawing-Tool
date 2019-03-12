@@ -1,0 +1,1 @@
+make min of js and css files for faster rendering on server
